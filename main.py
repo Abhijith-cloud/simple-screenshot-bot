@@ -24,6 +24,7 @@ bot = TelegramClient(
 browser, page = None, None
 
 
+
 async def start_browser():
     global browser, page
     browser = await launch(headless=True, args=['--no-sandbox'])
@@ -57,5 +58,5 @@ async def echo(event):
 
 if __name__ == '__main__':
     with bot:
-        bot.loop.run_until_complete(start_browser())
+     N   bot.loop.run_until_complete(start_browser())
         bot.run_until_disconnected()
